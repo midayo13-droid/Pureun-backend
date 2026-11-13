@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: pureun-backend
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: npm run start:prod
+    healthCheckPath: /api
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: DB_SCHEMA
+        value: rental
+      - key: GPT_MODEL
+        value: gpt-4o-mini
+      - key: DIFY_API_URL
+        value: https://api.dify.ai/v1
+      - key: UPLOAD_DIR
+        value: uploads
+      - key: CORS_ORIGIN
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: GPT_API_KEY
+        sync: false
+      - key: DIFY_API_KEY
+        sync: false

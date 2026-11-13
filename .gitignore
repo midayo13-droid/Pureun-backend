@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+uploads/
+*.log
+.DS_Store
+
+seed-data/DEMO_ACCOUNTS.md
+
+*.tsbuildinfo
+seed-data/DEMO_ACCOUNTS.md
