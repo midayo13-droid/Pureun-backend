@@ -74,6 +74,7 @@ npm run start:dev        # http://localhost:4000/api
 | **Start Command** | `npm run start:prod` |
 | Health Check Path | `/api` |
 | Instance Type | Free |
+| Region | Virginia (US East) — 데이터베이스와 같은 지역으로 맞추면 응답이 빨라집니다 |
 
 3. Environment에 위 표의 `DATABASE_URL`, `JWT_SECRET`, `CORS_ORIGIN`(Vercel 주소), 필요하면 `DIFY_API_KEY`를 넣습니다.
 4. 배포가 끝나면 `https://<서비스이름>.onrender.com/api`가 열리는지 확인하고, 이 주소 뒤에 `/api`까지 붙인 값을 프런트엔드의 `NEXT_PUBLIC_API_URL`에 넣습니다.

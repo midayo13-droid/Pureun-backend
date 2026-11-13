@@ -3,7 +3,7 @@ services:
     name: pureun-backend
     runtime: node
     plan: free
-    region: oregon
+    region: virginia
     buildCommand: npm install --include=dev && npm run build
     startCommand: npm run start:prod
     healthCheckPath: /api
